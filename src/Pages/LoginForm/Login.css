@@ -1,0 +1,158 @@
+.container .logo {
+    position: absolute;
+    top: 10%;
+    margin-left: 5%;
+    background-size: cover;
+}
+
+.container .bg {
+    position: absolute;
+    top: 30%;
+    margin-left: 10%;
+    width: 35%;
+}
+
+.Wrapper {
+    width: 50%;
+    background-color: #FFFFFF;
+    /* float: right; */
+    display: absolute;
+    align-items: center;
+    /* padding: 15% 10% 16.55%; */
+    margin-top: 15%;
+    margin-left: 60%;
+
+
+}
+
+.Wrapper h1 {
+    font-weight: 800;
+    font-size: 45px;
+    color: #213f7d;
+    margin-left: -3px;
+}
+
+.Wrapper p {
+    font-weight: 400;
+    width: 194px;
+    height: 28px;
+    color: #545F7D;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.Wrapper .input-box {
+    width: 55%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.input-box input {
+    width: 90%;
+    height: 50px;
+    font-weight: 10;
+    padding-left: 1.5%;
+    font-size: 15px;
+    color: #545F7D;
+    border-radius: 5px;
+    border: 2px solid #545F7D;
+    outline: none;
+}
+
+.input-box .label {
+    position: relative;
+    right: 10%;
+    color: #39CDCC;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.Wrapper .forgot {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.forgot a {
+    color: #39CDCC;
+    text-decoration: none;
+}
+
+.Wrapper button {
+    height: 48px;
+    width: 50%;
+    border-radius: 8px;
+    background: #39CDCC;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: none;
+    margin-top: 40px;
+}
+
+
+
+/* img{
+    margin: 0px;
+    left: 67px;
+}
+
+.container{
+    width: 600px;
+    height: 337.57px;
+    top: 281px;
+    left: 67px;
+    display: grid;
+    align-items: center;
+    justify-content: left;
+    background-size: cover;
+    background-image: url(../Asssets/pablo-sign-in\ 1.png);
+}
+.form{
+    display: grid;
+    align-items: center;
+    justify-content: right;
+    padding-right: 200px;
+}
+h1{
+    font-weight: 700;
+    font-size: 40px;
+    color: #213f7d;
+}
+p{
+    font-weight: 400;
+    font-size: 20px;
+    width: 194px;
+    height: 28px;
+}
+.input-box{
+    width: 447px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #545F7D26;
+    display: flex;
+    align-items: center;
+}
+.input-box input{
+    width: 447px;
+    top: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #545F7D26;
+}
+label{
+    font-size: 12px;
+    font-weight: 600;
+    color: #39CDCC;
+}
+
+button{
+    height: 48px;
+    width: 447px;
+    border-radius: 8px;
+    background: #39CDCC;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: none;
+} */

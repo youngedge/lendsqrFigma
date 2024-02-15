@@ -1,0 +1,7 @@
+.Dash{
+    display: flex;
+}
+.Dash .container{
+    /* background-color: #FBFBFB; */
+    flex: 8;
+}
