@@ -1,0 +1,9 @@
+.table{
+    margin-top: 10px;
+    border: 1px solid #213F7D0F;
+}
+.table .tablecell{
+    font-size: 14px;
+    font-weight: 400;
+    color: #545F7D;
+}

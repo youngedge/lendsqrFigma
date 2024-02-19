@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 .Sidebar{
     background-color: #FFFFFF;
     flex: 1;
     min-height: 100vh;
+    font-family: "Work Sans", sans-serif;
     /* border-right: 0.5px solid; */
 }
 .Sidebar .top{
@@ -17,4 +20,30 @@
     list-style: none;
     margin: 0;
     padding: 0;
+}
+ul .title{
+    font-size: 12px;
+    color: #545F7D;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+ul li{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+li .icon{
+    color: #8e9ab0;
+}
+ul li:hover {
+    background-color: #545F7D;
+}
+span{
+    margin-left: 10px;
+    color: #213F7D;
 }
