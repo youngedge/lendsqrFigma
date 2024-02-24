@@ -37,8 +37,8 @@ export const Sidebar = () => {
                         <GoChevronDown className="icon" />
                     </li>
                     <li>
-                        <FaHome className="icon" />
-                        <span> Dashboard </span>
+                        <FaHome className="icon1" />
+                        <span className = "dash"> Dashboard </span>
                     </li>
                     <p className="title">CUSTOMERS</p>
                     <li>

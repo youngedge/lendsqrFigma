@@ -1,19 +1,19 @@
-.widget{
-    /* margin-right: 20px; */
-    flex: 1;
-    padding: 10px;
-    height: 160px;
-    border-radius: 4px;
-    border: 1px;
-    
-    /* justify-content: space-between; */
-    /* border-width: 0px, 0px, 0px, 0px;
-    border-style: solid;
-    border-color: #213F7D0F; */
-    /* box-shadow: -2px -5px 18px -8px rgba(33, 63, 125, 1);
-    -webkit-box-shadow: -2px -5px 18px -8px rgba(33, 63, 125, 1);
-    -moz-box-shadow: -2px -5px 18px -8px rgba(33, 63, 125, 1); */
-}
+.widget-container {
+    display: flex; /* Arranges widgets in a row */
+    gap: 20px;   /* Space between widgets */
+  }
+  
+  .widget {
+    width: 1500px;      /* Adjust the width as needed */
+    height: 150px;     /* Adjust the height as needed */
+    background-color: white; /* Light gray background */
+    border: transparent;     /* Subtle border */
+    padding: 20px;              /* Internal spacing  */
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;         /*Slightly rounded corners */
+    margin-top: 2.5%;
+  }
+  
 .iconuser{
     color: #DF18FF;
     background-color: #d98be5;
