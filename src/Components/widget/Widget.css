@@ -1,6 +1,8 @@
 .widget-container {
     display: flex; /* Arranges widgets in a row */
     gap: 20px;   /* Space between widgets */
+    background-color: red;
+    padding: 30px;
   }
   
   .widget {
@@ -11,7 +13,7 @@
     padding: 20px;              /* Internal spacing  */
     box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;         /*Slightly rounded corners */
-    margin-top: 2.5%;
+    margin-top: 30px;
   }
   
 .iconuser{
