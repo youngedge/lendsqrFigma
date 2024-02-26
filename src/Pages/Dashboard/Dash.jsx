@@ -24,8 +24,8 @@ return(
                 <Widget type="USERS WITH LOANS"/>
                 <Widget type="USERS WITH SAVINGS"/>
             </div>
-            <div className="listcontainer">
-                <div className="listtitle">
+            <div className="listContainer">
+                <div className="listTitle">
                     {/* <span> ORGANIZATION </span> 
                     <LuListFilter className='filtericon'/> */}
                 </div>

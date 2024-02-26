@@ -10,25 +10,25 @@
     padding: 20px;
     gap: 20px;
 }
-.listcontainer{
+.listContainer{
     /* box-shadow: -2px -5px 18px -8px rgba(33, 63, 125, 1);
     -webkit-box-shadow: -2px -5px 18px -8px rgba(33, 63, 125, 1);
     -moz-box-shadow: -2px -5px 18px -8px rgba(33, 63, 125, 1); */
     padding: 20px;
     margin: 20px;
 }
-.listtitle{
+.listTitle{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
     color: #545F7D;
 }
-.listtitle span{
+.listTitle span{
     font-size: 12px;
     font-weight: 600;
 
 }
-.listtitle .filtericon{
+.listTitle .filtericon{
     display: flex;
     align-items: center;
     margin-left: 10px;
