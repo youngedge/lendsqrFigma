@@ -123,7 +123,6 @@ const TableFooter = ({ rowCount, rowsPerPage, onRowsPerPageChange }) => {
 const UserTable = () => { 
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
-
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
@@ -132,15 +131,35 @@ const UserTable = () => {
     setRowsPerPage(event.target.value);
     setPage(0); // Reset to the first page
   };
-
   return (
     <TableContainer component={Paper} className='table'>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell className='tablecell'>ORGANIZATION</TableCell> 
-            <TableCell className='tablecell'>USERNAME</TableCell>
-            <TableCell className='tablecell'>EMAIL</TableCell>
+            <TableCell className='tablecell'>
+            <span>ORGANIZATION</span>
+            <LuListFilter className='filtericon'/>
+            </TableCell> 
+            <TableCell className='tablecell'>
+            <span>USERNAME</span>
+            <LuListFilter className='filtericon'/>
+            </TableCell>
+            <TableCell className='tablecel'>
+            <span>EMAIL</span>
+            <LuListFilter className='filtericon'/>
+            </TableCell>
+            <TableCell className='tablecell'>
+            <span>PHONE NUMBER</span>
+            <LuListFilter className='filtericon'/>
+            </TableCell>
+            <TableCell className='tablecell'>
+            <span>DATE JOINED</span>
+            <LuListFilter className='filtericon'/>
+            </TableCell>
+            <TableCell className='tablecell'>
+            <span>STATUS</span>
+            <LuListFilter className='filtericon'/>
+            </TableCell>
             {/* Add more TableCell elements for other properties */}
           </TableRow>
         </TableHead>
@@ -152,6 +171,9 @@ const UserTable = () => {
                 <TableCell className='tablecell'>{row.organization_name}</TableCell>
                 <TableCell className='tablecell'>{row.username}</TableCell>
                 <TableCell className='tablecell'>{row.email}</TableCell>
+                <TableCell className='tablecell'>{row.phone_number}</TableCell>
+                <TableCell className='tablecell'>{row.date_joined}</TableCell>
+                <TableCell className='tablecell'>{row.status}</TableCell>
                 {/* Add more TableCell elements to render other properties */}
               </TableRow>
             ))}
@@ -166,7 +188,7 @@ const UserTable = () => {
         className='pagination' 
         count={Math.ceil(rows.length / rowsPerPage)}
         page={page}
-        // onChange={handleChangePage} 
+        onChange={page} 
       />
     </TableContainer>
   );
