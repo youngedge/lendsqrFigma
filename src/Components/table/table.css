@@ -23,7 +23,12 @@
     position: absolute;
 }
 .numbr{
-    position:fixed;
-    margin-top: -1.4%;
+    position:relative;
+    margin-top: -10%;
     margin-left: 150px;
+}
+.pagination{
+    position: absolute;
+    margin-top: 0.5%;
+    margin-left: 70%;
 }
