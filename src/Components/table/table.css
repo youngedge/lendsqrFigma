@@ -1,5 +1,5 @@
 .table{
-    margin-top: 30px;
+    margin-top: -3%;
     border: 1px solid #213F7D0F;
 }
 .table .tablecell{
@@ -10,16 +10,16 @@
 .drpDown{
     width: 60px;
     height: 25px;
-    margin-top: 3%;
+    margin-top: -40%;
     margin-left: 80px;
     position: absolute;
 }
 .shw{
     position: absolute;
-    margin-top: 3%;
+    margin-top: -1%;
 }
 .footer{
-    margin-top: 1%;
+    margin-top: 5%;
     position: absolute;
 }
 .numbr{
@@ -29,9 +29,16 @@
 }
 .pagination{
     position: absolute;
-    margin-top: 0.5%;
-    margin-left: 70%;
+    margin-top: 4%;
+    margin-left: 54%;
 }
 .filtericon{
     
+}
+.Users{
+    position: absolute;
+    font-size: 180%;
+    margin-top: -20%;
+    color:  #213F7D;
+    font-weight: 10px;
 }

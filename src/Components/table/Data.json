@@ -1,0 +1,92 @@
+[
+    {
+        "organization_name": "Acme Corporation",
+        "username": "johndoe123",
+        "email": "johndoe@acme.com",
+        "phone_number": "+234 812 345 6789",
+        "date_joined": "2023-11-15",
+        "status": "Active",
+        "icon": " "
+    },
+    {
+            "organization_name": "Innovative Solutions",
+            "username": "olivia.garcia_88",
+            "email": "olivia.garcia@innovativesolutions.io",
+            "phone_number": "+1 (212) 555-0123",
+            "date_joined": "2023-05-18",
+            "status": "Active",
+            "icon": " "
+        },
+        {
+            "organization_name": "Green Earth Collective",
+            "username": "charles.martin_42",
+            "email": "charles.martin@greeneartcollective.org",
+            "phone_number": "+44 (20) 7946 1234",
+            "date_joined": "2024-01-12",
+            "status": "Pending",
+            "icon": " "
+        },
+        {
+            "organization_name": "Technovation Labs",
+            "username": "emma.williams_71",
+            "email": "emma.williams@technovationlabs.com",
+            "phone_number": "+61 (2) 8088 5555",
+            "date_joined": "2023-11-07",
+            "status": "Blacklisted",
+            "icon": " "
+        },
+        {
+            "organization_name": "Global Consulting Group",
+            "username": "noah.miller_09",
+            "email": "noah.miller@globalconsultinggroup.net",
+            "phone_number": "+86 (10) 8888 1212",
+            "date_joined": "2023-08-29",
+            "status": "Inactive",
+            "icon": " "
+        },
+        {
+            "organization_name": "Creative Minds Design",
+            "username": "ava.jackson_35",
+            "email": "ava.jackson@creativesmindsdesign.co",
+            "phone_number": "+55 (11) 9999 0000",
+            "date_joined": "2022-12-21",
+            "status": "Active",
+            "icon": " "
+        },
+        {
+            "organization_name": "Health & Wellness Center",
+            "username": "william.davis_16",
+            "email": "william.davis@healthwellnesscenter.info",
+            "phone_number": "+91 (80) 2222 3333",
+            "date_joined": "2023-07-14",
+            "status": "Blacklisted",
+            "icon": " "
+        },
+        {
+            "organization_name": "Learning Hub Institute",
+            "username": "sophia.taylor_24",
+            "email": "sophia.taylor@learninghubinstitute.edu",
+            "phone_number": "+33 (1) 4567 8901",
+            "date_joined": "2024-02-09",
+            "status": "Pending",
+            "icon": " "
+        },
+        {
+            "organization_name": "Eco Solutions",
+            "username": "liam.walker_93",
+            "email": "liam.walker@ecosolutions.biz",
+            "phone_number": "+49 (30) 1234 5678",
+            "date_joined": "2023-03-03",
+            "status": "Active",
+            "icon": " "
+        },
+        {
+            "organization_name": "Marketing Strategies Group",
+            "username": "mia.anderson_57",
+            "email": "mia.anderson@marketingstrategiesgroup.ca",
+            "phone_number": "+7 (495) 555 9999",
+            "date_joined": "2023-09-22",
+            "status": "Inactive",
+            "icon": " "
+        }
+    ]

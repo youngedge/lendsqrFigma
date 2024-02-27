@@ -11,8 +11,9 @@
 .search{
     display: flex;
     align-items: center;
-    border-radius: 12px;
-    border: 1px solid #213F7D;
+    margin-left: 2%;
+    border-radius: 10px;
+    border: 1px solid grey;
     height: 40px;
     width: 400px;
     background-color: #39CDCC;
@@ -20,7 +21,8 @@
 .search input{
     height: 40px;
     width: 400px;
-    border: none;
+    border: 1px solid grey;
+    border-radius: 10px;
     outline: none;
     color: #545F7D;
     background-color: #FFFFFF;
