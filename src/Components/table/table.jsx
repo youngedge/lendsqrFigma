@@ -12,6 +12,12 @@ import React, { useState } from 'react';
 import Pagination from '@mui/material/Pagination'; 
 import Data from '../../Components/table/Data.json'; // importing data from local json file
 import { Select, MenuItem, Popover } from '@mui/material';
+import { TbUserCheck } from "react-icons/tb";
+import { TbUserX } from "react-icons/tb";
+import { PiEye } from "react-icons/pi";
+import { useNavigate } from 'react-router-dom';
+
+// import { Link } from "react-router-dom"
 
 
 const TableFooter = ({ rowCount, rowsPerPage, onRowsPerPageChange }) => {
@@ -43,6 +49,8 @@ const TableFooter = ({ rowCount, rowsPerPage, onRowsPerPageChange }) => {
 
 // defining the List component
 const List = () => {
+    const navigate = useNavigate();
+    const handleClick = () => {navigate("../../User")};
     const [page, setPage] = useState(0);
     const [rowsPerPage, setRowsPerPage] = useState(10);
     const handleChangePage = (event, newPage) => {
@@ -56,8 +64,6 @@ const List = () => {
 };
     const open = Boolean(anchorEl); // State to control dropdown visibility
     const id = open ? 'simple-popover' : undefined;
-    
-
     const handleRowsPerPageChange = (event, newPage) => {
         setPage (newPage - 1);
         setRowsPerPage(event.target.value);
@@ -114,14 +120,16 @@ const List = () => {
                     <TableCell className="tablecell">{d.phone_number}</TableCell>
                     <TableCell className="tablecell">{d.date_joined}</TableCell>
                     <TableCell className="tablecell">
-                        <span className={`status ${d.status}`}> {d.status} </span>
+                        <span className= {`status-pill ${d.status.toLowerCase()}`}> {d.status} </span>
                     </TableCell>
-                    <TableCell className="dropDown">
+                    <TableCell>
+                    
                     {d.icon && (
                       <> {/* Wrap in a fragment to avoid extra DOM elements */}
                           <PiDotsThreeOutlineVerticalFill
                               onClick={(event) => handleMenuOpen(event, i)} 
-                          />
+                          />  
+                          
                      <Popover
                              id={id}
                              open={open}
@@ -136,13 +144,27 @@ const List = () => {
                                  horizontal: 'right',
                              }}
                                >
-                             <MenuItem onClick={handleMenuClose}>View Details</MenuItem>
-                             <MenuItem onClick={handleMenuClose}>Blacklist User</MenuItem>
-                             <MenuItem onClick={handleMenuClose}>Activate User</MenuItem>
+                              <div className='DropDown'> 
+                              <div>
+                             <MenuItem onClick={handleClick}>
+                             <PiEye />
+                            <span>View Details
+                              </span> 
+                            </MenuItem>
+                            </div>
+                             <MenuItem onClick={handleMenuClose}>
+                             <TbUserX />
+                            <span>Blacklist User</span>
+                             </MenuItem>
+                             <MenuItem onClick={handleMenuClose}>
+                             <TbUserCheck/> 
+                            <span>Activate User</span>
+                            </MenuItem>
+                             </div>
                             </Popover>
                             </>
-                            )}     
-                    </TableCell>
+                            )}  
+                          </TableCell>   
                     </TableRow>
                 ))}
                 </TableBody>
