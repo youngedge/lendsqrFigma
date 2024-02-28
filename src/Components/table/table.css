@@ -10,30 +10,27 @@
 .drpDown{
     width: 60px;
     height: 25px;
-    margin-top: -40%;
+    margin-top: 20%;
     margin-left: 80px;
     position: absolute;
 }
 .shw{
     position: absolute;
-    margin-top: -1%;
+    margin-top: 20%;
 }
 .footer{
-    margin-top: 5%;
+    /* margin-top: 5%; */
     position: absolute;
 }
 .numbr{
-    position:relative;
+    /* position:relative; */
     margin-top: -10%;
     margin-left: 150px;
 }
 .pagination{
     position: absolute;
-    margin-top: 4%;
+    margin-top: 2%;
     margin-left: 54%;
-}
-.filtericon{
-    
 }
 .Users{
     position: absolute;
@@ -41,4 +38,7 @@
     margin-top: -20%;
     color:  #213F7D;
     font-weight: 10px;
+}
+.dropDown{
+
 }

@@ -11,7 +11,7 @@ import { PiDotsThreeOutlineVerticalFill } from "react-icons/pi"; // importing Pi
 import React, { useState } from 'react';
 import Pagination from '@mui/material/Pagination'; 
 import Data from '../../Components/table/Data.json'; // importing data from local json file
-import { Select, MenuItem } from '@mui/material';
+import { Select, MenuItem, Popover } from '@mui/material';
 
 
 const TableFooter = ({ rowCount, rowsPerPage, onRowsPerPageChange }) => {
@@ -34,7 +34,7 @@ const TableFooter = ({ rowCount, rowsPerPage, onRowsPerPageChange }) => {
           {/* <MenuItem value={10}>10</MenuItem>
           <MenuItem value={25}>25</MenuItem> */}
         </Select>
-        <div className='numbr'>out of {100}</div> 
+        <div className='numbr'>out of {10}</div> 
       </div>
     </div>
     );
@@ -46,15 +46,23 @@ const List = () => {
     const [page, setPage] = useState(0);
     const [rowsPerPage, setRowsPerPage] = useState(10);
     const handleChangePage = (event, newPage) => {
-        setPage(newPage);
-    };
+    setPage(newPage);};
+    const [anchorEl, setAnchorEl] = useState(null);
+    const handleMenuOpen = (event, index) => {
+      setAnchorEl({ target: event.currentTarget, rowIndex: index });
+  };
+    const handleMenuClose = () => {
+    setAnchorEl(null);
+};
+    const open = Boolean(anchorEl); // State to control dropdown visibility
+    const id = open ? 'simple-popover' : undefined;
+    
 
-    const handleRowsPerPageChange = (event) => {
+    const handleRowsPerPageChange = (event, newPage) => {
+        setPage (newPage - 1);
         setRowsPerPage(event.target.value);
-        setPage(0); // Reset to the first page
+        // setPage(0); // Reset to the first page
     };
-
-
     // rendering the component
     return (
         <div>
@@ -108,23 +116,50 @@ const List = () => {
                     <TableCell className="tablecell">
                         <span className={`status ${d.status}`}> {d.status} </span>
                     </TableCell>
-                    <TableCell className="tablecell">
-                        {d.icon && <PiDotsThreeOutlineVerticalFill />}
+                    <TableCell className="dropDown">
+                    {d.icon && (
+                      <> {/* Wrap in a fragment to avoid extra DOM elements */}
+                          <PiDotsThreeOutlineVerticalFill
+                              onClick={(event) => handleMenuOpen(event, i)} 
+                          />
+                     <Popover
+                             id={id}
+                             open={open}
+                             anchorEl={anchorEl ? anchorEl.target : null}
+                             onClose={handleMenuClose}
+                             anchorOrigin={{
+                                 vertical: 'bottom',
+                                 horizontal: 'right',
+                             }}
+                             transformOrigin={{
+                                 vertical: 'top',
+                                 horizontal: 'right',
+                             }}
+                               >
+                             <MenuItem onClick={handleMenuClose}>View Details</MenuItem>
+                             <MenuItem onClick={handleMenuClose}>Blacklist User</MenuItem>
+                             <MenuItem onClick={handleMenuClose}>Activate User</MenuItem>
+                            </Popover>
+                            </>
+                            )}     
                     </TableCell>
                     </TableRow>
                 ))}
                 </TableBody>
             </Table>
+
             <TableFooter
                 rowCount={Data.length}
                 rowsPerPage={rowsPerPage}
                 onRowsPerPageChange={handleRowsPerPageChange}
             />
+
+            {/* PAGINATION CODE */}
            <Pagination
                className="pagination"
                count={Math.ceil(Data.length + rowsPerPage)}
                page={page + 1} // Adjust for 1-based indexing
-               onChange={handleChangePage}
+              //  onChange={handleChangePage}
            />
 
             </TableContainer>
