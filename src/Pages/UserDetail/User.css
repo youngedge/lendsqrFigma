@@ -1,0 +1,203 @@
+.bar {
+    width: 1300px;
+    height: 210px;
+    background-color:#FFFFFF; 
+    position: absolute; 
+    top: 290px; 
+    left: 350px;
+    border-radius: 4px;
+  }
+.main{
+    position: absolute;
+    width: 1300px;
+    height: 910px;
+    top: 530px;
+    left: 350px;
+    border-radius: 4px;
+    background-color:#FFFFFF;  
+}
+.Arrow {
+  position: absolute;
+  width: 200px;     /* Increase width for a longer appearance */
+  /* height: 150px;     Increase height for a bigger appearance */
+  display: inline-flex;
+  align-items: center;
+  /* justify-content: center; */
+  left: 350px;
+  font-size: 40px;  /* Increase the size of the icon */
+  color:#213F7D;
+  margin-top: 3.5%;
+}
+.Users{
+  font-family: Work Sans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #213F7D;
+  position: absolute;
+  margin-left: 6%;
+  margin-top: 7.5%;
+}
+.back{
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #213F7D;
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 4.05%;
+}
+.btnStyle1{
+  width: 170px;
+  height: 40px;
+  margin-top: 7%;
+  left: 1300px;
+  border-radius: 8px;
+  border: 1px solid #E4033B;
+  background-color: transparent;
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #E4033B;
+  position: absolute;
+}
+.btnStyle1{
+  /* ... your existing styles ... */
+  transition: background-color 0.3s ease; /* Add a transition for smoothness */
+}
+
+.btnStyle1:hover {
+  background-color:#E4033B;
+  color: black; 
+}
+.btnStyle2{
+  width: 170px;
+  height: 40px;
+  margin-top: 7%;
+  left: 1480px;
+  border-radius: 8px;
+  border: 1px solid #39CDCC;
+  background-color: transparent;
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color:#39CDCC;
+  position: absolute;
+}
+.btnStyle2{
+  /* ... your existing styles ... */
+  transition: background-color 0.3s ease; /* Add a transition for smoothness */
+}
+
+.btnStyle2:hover {
+  background-color: #39CDCC;
+  color: black; 
+}
+.userProfile{
+  position: absolute;
+  left: 2%;
+  top: 10%;
+}
+.name{
+  position: absolute;
+  left: 11%;
+  top: 22%;
+  color: #213F7D;
+  font-family: Work Sans;
+  width: 140px;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25.81px;
+}
+.key{
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.42px;
+  top: 35%;
+  position: absolute;
+  color: #545F7D;
+  left: 11.1%;
+}
+.vertical-line1{
+  position: absolute;
+  width: 80px;
+  height: 1px; 
+  background-color: black;
+  border: 1px solid #545F7D;
+  opacity: 0.2;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  transform: rotate(-90deg);
+}
+.vertical-line2{
+  position: absolute;
+  width: 80px;
+  height: 1px; 
+  background-color: black;
+  border: 1px solid #545F7D;
+  opacity: 0.2;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  transform: rotate(-90deg);
+}
+.user-tier{
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color:#545F7D;
+  width: 110px;
+  height: 16px;
+  position: absolute;
+  top: 20%;
+  left: 28.5%;
+}
+.star{
+  top: 30%;
+  left: 29.7%;
+  position: absolute;
+}
+.amt{
+  top: 22%;
+  left: 45%;
+  position: absolute;
+  font-family: Work Sans;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 25.81px;
+  color: #213F7D;
+
+}
+.acc{
+  top: 40%;
+  left: 45%;
+  position: absolute;
+  font-family: Work Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;  
+  line-height: 25.81px;
+  color: #213F7D;
+
+}

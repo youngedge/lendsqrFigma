@@ -1,5 +1,5 @@
-.table{
-    margin-top: -3%;
+/* .table{
+    margin-top: 10px;
     border: 1px solid #213F7D0F;
 }
 .table .tablecell{
@@ -7,6 +7,7 @@
     font-weight: 400;
     color: #545F7D;
 }
+
 .drpDown{
     width: 60px;
     height: 25px;
@@ -19,11 +20,9 @@
     margin-top: 20%;
 }
 .footer{
-    /* margin-top: 5%; */
     position: absolute;
 }
 .numbr{
-    /* position:relative; */
     margin-top: -10%;
     margin-left: 150px;
 }
@@ -39,37 +38,103 @@
     color:  #213F7D;
     font-weight: 10px;
 }
-.status-pill {
+.dropDown{
+
+}
+
+.shw {
+    position: absolute;
+    margin-top: 3%;
+}
+
+.footer {
+    margin-top: 1%;
+    position: absolute;
+}
+
+.numbr {
+    position: fixed;
+    margin-top: -1.4%;
+    margin-left: 150px;
+} */
+
+
+
+.table {
+    margin-top: -3%;
+    border: 1px solid #213F7D0F;
+}
+
+.table .tablecell {
+    font-size: 14px;
+    font-weight: 400;
+    color: #545F7D;
+}
+
+.drpDown {
+    width: 60px;
+    height: 25px;
+    margin-top: 20%;
+    margin-left: 80px;
+    position: absolute;
+}
+
+.shw {
+    position: absolute;
+    margin-top: 20%;
+}
+
+.footer {
+    /* margin-top: 5%; */
+    position: absolute;
+}
+
+.numbr {
+    /* position:relative; */
+    margin-top: -10%;
+    margin-left: 150px;
+}
+
+.pagination {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 54%;
+}
+
+.Users {
+    position: absolute;
+    font-size: 180%;
+    margin-top: -20%;
+    color: #213F7D;
+    font-weight: 10px;
+}
+
+.dropDown {}
+.status {
     display: inline-block;
     padding: 4px 8px;
     border-radius: 16px;
     font-size: 12px;
     font-weight: bold;
     margin-left: 8px;
-  }
-  
-  .status-pill.inactive {
+}
+
+.status.inactive {
     background-color: rgb(235, 229, 229);
     color: #333;
-    
-  }
-  
-  .status-pill.pending {
+}
+
+.status.pending {
     background-color: rgb(247, 240, 218);
     color: #E9B200;
-  }
-  
-  .status-pill.active {
+}
+
+.status.active {
     background-color: rgb(232, 246, 236);
     color: #39CD62;
-  }
-  
-  .status-pill.blacklisted {
+}
+
+.status.blacklisted {
     background-color: rgb(255, 228, 225);
     color: #E4033B;
-    font-family:sans-serif;
-  }
-  .no-underline{
-    text-decoration: none;
-    color: #545F7D;
-  }
+}

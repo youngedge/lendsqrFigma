@@ -11,9 +11,7 @@
 .search{
     display: flex;
     align-items: center;
-    margin-left: 2%;
-    border-radius: 10px;
-    border: 1px solid grey;
+    border-radius: 8px;
     height: 40px;
     width: 400px;
     background-color: #39CDCC;
@@ -21,13 +19,11 @@
 .search input{
     height: 40px;
     width: 400px;
-    border: 1px solid grey;
-    border-radius: 10px;
+    border-radius: 8px;
+    border: 0.1px solid #213F7D;
     outline: none;
     color: #545F7D;
     background-color: #FFFFFF;
-
-    /* opacity: 70%; */
     padding-left: 15px;
 }
 input ::placeholder{
