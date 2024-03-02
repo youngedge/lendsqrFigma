@@ -201,3 +201,98 @@
   color: #213F7D;
 
 }
+.GT{
+   position:absolute;
+   top: 47%;
+   left: 25%;
+   font-family: Work Sans;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 19px;
+   letter-spacing: 0em;
+   text-align: center;
+   color: #39CDCC;
+
+   
+}
+.DOC{
+  position:absolute;
+  top: 47%;
+  left: 37%;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+.BD{
+  position:absolute;
+  top: 47%;
+  left: 49%;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.LOANS{
+  position:absolute;
+  top: 47%;
+  left: 62%;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.SAVINGS{
+  position:absolute;
+  top: 47%;
+  left: 72%;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.AS{
+  position:absolute;
+  top: 47%;
+  left: 82%;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.horizontal{
+  width: 170px;
+  top: 500px;
+  left: 410px;
+  border-top: 2px solid #39CDCC; /* Only top border for a line */
+  position: absolute; /* To use the top and left positioning */
+}
+/* Hover styles */
+.GT:hover, 
+.DOC:hover,
+.BD:hover,
+.LOANS:hover,
+.SAVINGS:hover,
+.AS:hover {
+  color: #39CDCC;
+}
+/* Horizontal Line on Hover */
+.GT:hover ~ .horizontal,
+.DOC:hover ~ .horizontal,
+.BD:hover ~ .horizontal,
+.LOANS:hover ~ .horizontal,
+.SAVINGS:hover ~ .horizontal,
+.AS:hover ~ .horizontal { 
+  opacity: 1;  
+}

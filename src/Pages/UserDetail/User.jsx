@@ -55,6 +55,15 @@ export const User = () => {
             </div>
             <div className="main"></div>
             </div>
+                {/* <div className='mainTask'> */}
+                    <div className='GT'>General Details</div>
+                    <div className='DOC'>Document       </div>
+                    <div className='BD'>Bank details   </div>
+                    <div className='LOANS'>Loans          </div>
+                    <div className='SAVINGS'>Savings          </div>
+                    <div className='AS'>App and System </div>
+                {/* </div> */}
+                <div className='horizontal'></div>
         </div>
     );
 }
