@@ -138,3 +138,71 @@
     background-color: rgb(255, 228, 225);
     color: #E4033B;
 }
+/* General Styles */
+MenuItem {
+    height: 600px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #545F7D;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.filter-row {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/* Labels */
+label {
+    font-weight: 500;
+    color: #545F7D;
+}
+
+/* Input Fields */
+.filter-input {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #213F7D;
+}
+.filter-input::-webkit-inner-spin-button,
+.filter-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Select Box */
+.filter-select {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid #213F7D;
+    border-radius: 3px;
+}
+
+/* Buttons */
+.reset-btn,
+.filter-btn {
+    width: 98px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.reset-btn {
+    background-color: #FFFFFF;
+    border: 1px solid #545F7D;
+}
+
+.filter-btn {
+    background-color: #39CDCC;
+    border: 1px solid #39CDCC;
+}

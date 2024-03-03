@@ -1,3 +1,6 @@
 {
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ]
 }

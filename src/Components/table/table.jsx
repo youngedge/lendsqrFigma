@@ -72,6 +72,15 @@ const List = () => {
         setRowsPerPage(event.target.value);
         // setPage(0); // Reset to the first page
     };
+    const [anchorEl1, setAnchorEl1] = useState(null);
+    const handleMenuOpen1 = (event, index) => {
+        setAnchorEl1({ target: event.currentTarget, rowIndex: index });
+    };
+    const handleMenuClose1 = () => {
+        setAnchorEl1(null);
+    };
+    const open1 = Boolean(anchorEl1); // State to control dropdown visibility for the filtering
+    const id1 = open1 ? 'simple-popover' : undefined;
     // rendering the component
     return (
         <div>
@@ -79,16 +88,21 @@ const List = () => {
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
-                            <TableCell className="tablecell">
+                            {/* <TableCell className="tablecell">
                                 <span> ORGANIZATION </span>
                                 <LuListFilter className="filtericon"
-                                    // onClick={(event) => handleMenuOpen(event)}
                                 />
-                                {/* <Popover
-                                    id={id}
-                                    open={open}
-                                    anchorEl={anchorEl ? anchorEl.target : null}
-                                    onClose={handleMenuClose}
+                            </TableCell> */}
+                            <TableCell className="tablecell"> 
+                                <span> ORGANIZATION </span>
+                                <LuListFilter className="filtericon"
+                                    onClick={(event) => handleMenuOpen1(event)}
+                                />
+                                <Popover
+                                    id={id1}
+                                    open={open1}
+                                    anchorEl={anchorEl1 ? anchorEl1.target : null}
+                                    onClose={handleMenuClose1}
                                     anchorOrigin={{
                                         vertical: 'bottom',
                                         horizontal: 'right',
@@ -98,37 +112,75 @@ const List = () => {
                                         horizontal: 'right',
                                     }}
                                 >
-                                    <MenuItem onClick={handleMenuClose}>
-                                        <form action="">
-                                            <label htmlFor="">Organization</label>
-                                            <input type="text" />
-                                            <label htmlFor="">Username</label>
-                                            <input type="text" />
-                                            <label htmlFor="">Email</label>
-                                            <input type="email" />
+                                    <MenuItem>
+                                        <form action="" class="filter">
+                                            <div class="filter-row">
+                                                <label for="organization_filter">Organization</label>
+                                                <input type="text" name="organization_filter" className="filter-input" />
+                                            </div>
+                                            <div class="filter-row">
+                                                <label for="username_filter">Username</label>
+                                                <input type="text" name="username_filter" className="filter-input" />
+                                            </div>
+                                            <div class="filter-row">
+                                                <label for="email_filter">Email</label>
+                                                <input type="email" name="email_filter" className="filter-input" />
+                                            </div>
+                                            <div class="filter-row">
+                                                <label for="date_filter">Date</label>
+                                                <input type="date" name="date_filter" className="filter-input" />
+                                            </div>
+                                            <div class="filter-row">
+                                                <label for="number_filter">Phone Number</label>
+                                                <input type="number" name="number_filter" className="filter-input" />
+                                            </div>
+                                            <div class="filter-row">
+                                                <label for="status_filter">Status</label>
+                                                <select name="status_filter" className="filter-select">
+                                                    <option placeholder="" ></option>
+                                                    <option value="active">Active</option>
+                                                    <option value="inactive">Inactive</option>
+                                                    <option value="pending">Pending</option>
+                                                    <option value="blacklisted">Blacklisted</option>
+                                                </select>
+                                            </div>
+                                            <div >
+                                                <button type="submit" class="reset-btn">Reset</button>
+                                                <button type="submit" class="filter-btn">Filter</button>
+                                            </div>
                                         </form>
                                     </MenuItem>
-                                </Popover> */}
+                                </Popover>
                             </TableCell>
                             <TableCell className="tablecell">
                                 <span> USERNAME </span>
-                                <LuListFilter className="filtericon" />
+                                <LuListFilter className="filtericon" 
+                                    onClick={(event) => handleMenuOpen1(event)}
+                                />
                             </TableCell>
                             <TableCell className="tablecell">
                                 <span> EMAIL </span>
-                                <LuListFilter className="filtericon" />
+                                <LuListFilter className="filtericon" 
+                                onClick={(event) => handleMenuOpen1(event)}
+                                />
                             </TableCell>
                             <TableCell className="tablecell">
                                 <span> PHONE NUMBER </span>
-                                <LuListFilter className="filtericon" />
+                                <LuListFilter className="filtericon" 
+                                onClick={(event) => handleMenuOpen1(event)}
+                                />
                             </TableCell>
                             <TableCell className="tablecell">
                                 <span> DATE JOINED </span>
-                                <LuListFilter className="filtericon" />
+                                <LuListFilter className="filtericon" 
+                                onClick={(event) => handleMenuOpen1(event)}
+                                />
                             </TableCell>
                             <TableCell className="tablecell">
                                 <span> STATUS </span>
-                                <LuListFilter className="filtericon" />
+                                <LuListFilter className="filtericon" 
+                                onClick={(event) => handleMenuOpen1(event)}
+                                />
                             </TableCell>
                         </TableRow>
                     </TableHead>
