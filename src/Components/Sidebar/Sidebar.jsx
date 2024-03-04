@@ -21,7 +21,7 @@ import { VscGraph } from "react-icons/vsc";
 import { RiEqualizerFill } from "react-icons/ri";
 import { LuBadgePercent } from "react-icons/lu";
 import { TbClipboardList } from "react-icons/tb";
-
+import { useNavigate } from 'react-router-dom';
 
 export const Sidebar = () => {
     return (
@@ -36,9 +36,9 @@ export const Sidebar = () => {
                         <span> Switch Organization </span>
                         <GoChevronDown className="icon" />
                     </li>
-                    <li className='dashBoard'>
+                    <li className='dashBoard' >
                         <FaHome className="icon" />
-                        <span> Dashboard </span>
+                        <span>  Dashboard  </span>
                     </li>
                     <p className="title">CUSTOMERS</p>
                     <li>

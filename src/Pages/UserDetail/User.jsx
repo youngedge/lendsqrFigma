@@ -5,16 +5,17 @@ import Sidebar from '../../Components/Sidebar/Sidebar';
 import { HiOutlineArrowLongLeft } from "react-icons/hi2";
 import profile from '../Asssets/profile.svg';
 import StarIcon from '@mui/icons-material/Star'; 
-
+import { useNavigate } from 'react-router-dom';
 
 export const User = () => {
-
+    const navigate = useNavigate();
+    const handleClick = ()=> {navigate("../Dashboard")}
     return (
         <div className="Dash">
             <Sidebar />
             <div className="container">
                 <Navbar />
-                <div className='Arrow'><HiOutlineArrowLongLeft />
+                <div className='Arrow'><HiOutlineArrowLongLeft onClick={handleClick}/>
                 </div>
                 <div className='Users'>
                     User Details
